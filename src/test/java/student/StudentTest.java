@@ -10,6 +10,8 @@ public class StudentTest {
         Student student = new Student("Vamsi", 85);
 
         assertEquals("Vamsi", student.getName());
+
+        System.out.println("Test Student Name: PASS");
     }
 
     @Test
@@ -17,6 +19,8 @@ public class StudentTest {
         Student student = new Student("Vamsi", 85);
 
         assertEquals(85, student.getMarks());
+
+        System.out.println("Test Student Marks: PASS");
     }
 
     @Test
@@ -24,6 +28,8 @@ public class StudentTest {
         Student student = new Student("Vamsi", 85);
 
         assertEquals("PASS", student.getResult());
+
+        System.out.println("Test Pass Result: PASS");
     }
 
     @Test
@@ -31,5 +37,7 @@ public class StudentTest {
         Student student = new Student("Rahul", 35);
 
         assertEquals("FAIL", student.getResult());
+
+        System.out.println("Test Fail Result: PASS");
     }
 }
